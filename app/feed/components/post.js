@@ -22,7 +22,7 @@ class Post extends React.Component {
 }
 
 Post.propTypes = {
-    post: React.PropTypes.element.isRequired
-};
+    post: React.PropTypes.object.isRequired
+}
 
 export default Post;

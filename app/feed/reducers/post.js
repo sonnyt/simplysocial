@@ -1,23 +1,23 @@
 const users = {
     sam: {
         name: 'Sam Soffes',
-        avatar: 'http://placehold.it/40x40',
+        avatar: 'http://lorempixel.com/40/40/people/',
     },
     meg: {
         name: 'Meg Robichaud',
-        avatar: 'http://placehold.it/40x40',
+        avatar: 'http://lorempixel.com/40/40/people/',
     },
     kerem: {
         name: 'Kerem Suer',
-        avatar: 'http://placehold.it/40x40',
+        avatar: 'http://lorempixel.com/40/40/people/',
     },
     liang: {
         name: 'Liang Shi',
-        avatar: 'http://placehold.it/40x40',
+        avatar: 'http://lorempixel.com/40/40/people/',
     },
     jessica: {
         name: 'Jessica Tuan',
-        avatar: 'http://placehold.it/40x40',
+        avatar: 'http://lorempixel.com/40/40/people/',
     }
 };
 

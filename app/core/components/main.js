@@ -28,4 +28,8 @@ class Main extends React.Component {
     }
 }
 
+Post.propTypes = {
+    post: React.PropTypes.array.isRequired
+}
+
 export default Main
