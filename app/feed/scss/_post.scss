@@ -1,0 +1,46 @@
+ul.post-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li.post-item {
+        color: #70767f;
+        margin-bottom: 25px;
+        overflow: hidden;
+        border-radius: 3px;
+        border: 1px solid $subtle;
+
+        .post-item-content {
+            display: flex;
+            padding: 25px;
+
+            .post-item-avatar {
+                margin-right: 15px;
+
+                img {
+                    border-radius: 3px;
+                }
+            }
+
+            h3 {
+                margin: 0 0 10px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #3f454d;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .post-item-image {
+            line-height: 0;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+nav.navbar {
+    background: #262728;
+    padding: 15px 0;
+
+    h1.logo {
+        margin: 0;
+        font-size: 1.4rem;
+        height: 27px;
+        width: 141px;
+        background-image: url('../images/logo.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        overflow: hidden;
+        text-indent: -999999px;
+    }
+}

@@ -1,0 +1,42 @@
+main.hero {
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 50px;
+    padding: 120px 0 150px;
+    position: relative;
+
+    nav {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin: 0 20px 0 0;
+                padding: 0 5px;
+
+                a {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    padding: 0 5px 20px;
+                    display: inline-block;
+                    border-bottom: 4px solid transparent;
+
+                    &.active,
+                    &:hover {
+                        border-color: $seconday;
+                    }
+                }
+            }
+        }
+    }
+}
