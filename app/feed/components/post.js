@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 
-class Post extends React.Component {
+class Post extends Component {
     render() {
         var post = this.props.post;
 
         return (
             <li className="post-item">
-                <div className="post-item-content clearfix">
+                <article className="post-item-content clearfix">
                     <div className="post-item-avatar">
                         <img src={post.user.avatar} />
                     </div>
-                    <div>
-                        <h3>{post.user.name}</h3>
+                    <div className="post-item-body">
+                        <h3>
+                            {post.user.name}
+                            <small><i className="icon-reply"></i> <i className="icon-heart"></i> {post.date}</small>
+                        </h3>
                         <p>{post.body}</p>
                     </div>
-                </div>
+                </article>
                 { post.image ? <div className="post-item-image"><img src={post.image} /></div> : ''}
             </li>
         )
@@ -22,7 +25,7 @@ class Post extends React.Component {
 }
 
 Post.propTypes = {
-    post: React.PropTypes.object.isRequired
+    post: PropTypes.object.isRequired
 }
 
 export default Post;

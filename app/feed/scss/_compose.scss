@@ -1,0 +1,33 @@
+.compose-modal {
+    .detials {
+        margin-top: 10px;
+
+        a {
+            line-height: 37px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 18px 13px;
+            padding-left: 25px;
+            display: inline-block;
+            color: $subtle-dark;
+            opacity: .5;
+
+            &.photo {
+                background-image: url('../images/camera-dark.png');
+                margin-right: 30px;
+            }
+
+            &.video {
+                background-image: url('../images/video-dark.png');
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .button {
+            float: right;
+        }
+    }
+}

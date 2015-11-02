@@ -1,5 +1,8 @@
 @import "variables";
+@import "reset";
 @import "base";
-@import "nav";
-@import "main";
-@import "footer";
+@import "partials/form";
+@import "partials/nav";
+@import "partials/main";
+@import "partials/modal";
+@import "partials/footer";

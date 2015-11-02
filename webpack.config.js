@@ -1,28 +1,25 @@
+var webpack = require('webpack');
+
 module.exports = {
-    context: __dirname + '/app',
-    entry: {
-        js: './app.js',
-        html: './index.html',
-    },
+    entry: [
+      'webpack-dev-server/client?http://localhost:3000',
+      'webpack/hot/only-dev-server',
+      './app/app.js'
+    ],
     module: {
         loaders: [
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loaders: ['babel-loader'],
+              test: /\.js$/,
+              exclude: /node_modules/,
+              loaders: ['react-hot', 'babel-loader'],
             },
             {
               test: /\.html$/,
               loader: 'file?name=[name].[ext]',
             },
             {
-              test: /\.jpg$/,
+              test: /\.(png|jpg|gif|svg)$/,
               loader: 'file?name=images/[name].[ext]',
-            },
-            {
-              test: /\.js$/,
-              exclude: /node_modules/,
-              loaders: ['react-hot', 'babel-loader'],
             },
             {
                 test: /\.scss$/,
@@ -30,8 +27,17 @@ module.exports = {
             }
         ],
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     output: {
         filename: 'app.js',
         path: __dirname + '/dist',
-    }
+        publicPath: '/assets/'
+    },
+    resolve: {
+        alias: {
+            'eventEmitter/EventEmitter': 'wolfy87-eventemitter'
+        }
+    },
 };

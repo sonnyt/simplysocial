@@ -1,0 +1,51 @@
+section.user-settings {
+    .avatar {
+        float: left;
+        margin-right: 50px;
+
+        img, .button {
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 3px;
+            display: block;
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+
+    .basic-info {
+        width: 100%;
+        float: left;
+
+        @media(min-width: 767px) {
+            max-width: 360px;
+        }
+
+        .form-input {
+            width: 100%;
+
+            @media(min-width: 767px) {
+                max-width: 350px;
+            }
+        }
+
+        .user-icon {
+            background-image: url('../images/user.png');
+            background-size: 16px 16px;
+        }
+
+        .envelope-icon {
+            background-image: url('../images/envelope.png');
+            background-size: 16px 13px;
+        }
+
+        .lock-icon {
+            background-image: url('../images/lock.png');
+            background-size: 16px 16px;
+        }
+    }
+}
