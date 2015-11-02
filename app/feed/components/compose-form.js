@@ -29,8 +29,16 @@ class ComposeForm extends Component {
         return (
             <form onSubmit={this.handleSubmit.bind(this)}>
                 {this.props.layout === 'inline' ?
-                    <input type="text" onChange={this.onChange.bind(this)} value={this.state.body} placeholder="What’s on your mind?" /> :
-                    <textarea className="form-input" onChange={this.onChange.bind(this)} defaultValue={this.state.body} ref="body"></textarea>
+                    <input type="text"
+                           onChange={this.onChange.bind(this)}
+                           value={this.state.body}
+                           placeholder="What’s on your mind?"
+                    /> :
+                    <textarea className="form-input"
+                              onChange={this.onChange.bind(this)}
+                              defaultValue={this.state.body}
+                              ref="body"
+                    ></textarea>
                 }
                 <div className="detials clearfix">
                     <a className="photo" href="#">Add Photo</a><a className="video" href="#">Add Video</a>
